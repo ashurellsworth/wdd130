@@ -1,9 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Karla&display=swap');
+
 body {
     background-color: #edf2f4;
+    font-family: Fira Sans, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
     width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
 
 #content {
@@ -23,6 +34,7 @@ nav a {
     text-align: center;
     color: #2b2d42;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -32,6 +44,9 @@ nav a:hover {
 
 .home-title {
     color: #2b2d42;
+    font-family: Fira Sans, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -40,6 +55,11 @@ nav a:hover {
 
 .msg h2 {
     color: #2b2d42;
+    font-family: Karla, Helvetica, sans-serif;
+}
+
+h2 {
+    margin: 0;
 }
 
 h4 {
@@ -50,6 +70,14 @@ h4 {
     background-color: #8d99ae;
     color: #2b2d42;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid #2b2d42;
 }
 
 .book:hover, .join:hover {
@@ -65,12 +93,23 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
 .msg p {
     color: #2b2d42;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 #background {
@@ -80,11 +119,15 @@ main section {
 
 .msg {
     background-color: #8d99ae;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #8d99ae;
     color: #2b2d42;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -99,4 +142,8 @@ footer a:hover {
 
 footer p {
     font-size: 1.2em;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
