@@ -44,7 +44,7 @@ nav a:hover {
 
 .home-title {
     color: #2b2d42;
-    font-family: Fira Sans, Helvetica, sans-serif;
+    font-family: "Fira Sans", Helvetica, sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
@@ -55,7 +55,7 @@ nav a:hover {
 
 .msg h2 {
     color: #2b2d42;
-    font-family: Karla, Helvetica, sans-serif;
+    font-family: "Karla", Helvetica, sans-serif;
 }
 
 h2 {
