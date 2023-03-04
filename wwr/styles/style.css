@@ -223,6 +223,102 @@ footer .social img {
     padding-top: 15px;
 }
 
+/* Page 2 CSS */
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-auto-columns: 25%;
+}
+
+.faq-title {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: center;  
+    font-size: 36px; 
+    font-family: "Fira Sans", Arial, Helvetica;
+    color: #5E7269;
+    margin: 50px 0px;
+}
+
+.faq-accordion {
+    
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #5E7269;
+    outline: none;
+    transition: 0.4s;
+    grid-column: 2/4;
+    margin: 10px;
+    border-radius: 10px;
+    color: #475951;
+    background-color: #D1E6DD;
+    font-family: "Karla", Arial, Helvetica;
+    font-size: 16px;
+  }
+  
+  
+  .active, .faq-accordion:hover {
+    background-color: #b1c7bd;
+    color:#000000;
+  }
+  
+  
+  .faq-panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    grid-column: 2/4;
+    font-family: "Karla", Arial, Helvetica;
+    font-size: 14px;
+  }
+
+  #faq-background {
+    background-color: #8d99ae;
+    height: 300px;
+    grid-column: 1/5;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    grid-row: 15/15;
+  }
+
+  .contact {
+    background-color: #5E7269;
+    color: #D1E6DD;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Karla", Arial, Helvetica;
+    padding:15px 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+
+  .faq-msg {
+    background-color: #D1E6DD;
+    font-family: "Karla", Arial, Helvetica;
+    padding: 35px;
+    grid-column: 2/4;
+    grid-row: 15/15;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin-top: 137px;
+    max-height: 200px
+  }
+
+  .faq-accordion:after {
+    content: '\002B';
+    color: #475951;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+  }
+
 /* No extra CSS past this point. */
 
 @media screen and (max-width: 900px) {
