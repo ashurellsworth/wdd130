@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Whitewater Rafting Vacations | Dry Oar Boating | Rivers</title>
+</head>
+<body>
+    <div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rivers.html">Page 2</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/hero.png" alt="People enjonying white water rafting">
+        </div>
+        <section id="hero-msg">
+            <h1 class="home-title">Adventure Awaits You</h1>
+            <h4>Make Memories with Dry Oar</h4>
+            <div class="button-box">
+                <a class="book" href="contactus.html">Book Now</a>
+            </div>
+        </section>
+    </div>
+    <main class="faq-grid">
+        <button class="faq-accordion">Why choose Dry Oar Boating for your expedition?</button>
+    <div class="faq-panel">
+        <p>Dry Oar Boating prides itself on providing technically-focused, exciting, and adventurous trips for experienced travelers. We can help select the perfect trip for you.</p>
+
+            <p>We’re not a huge company, and that’s the way we want to keep it. This ensures our guests get personalized attention every step of the way.</p>
+            
+    </div>
+    <button class="faq-accordion">Are these beginner activities?</button>
+    <div class="faq-panel">
+        <p>No! These are not for beginners. These expeditions are for experienced outdoors men and women who know the minimum required information on our quick questionaire to join us on a trip.</p>
+    </div>
+    <button class="faq-accordion">What about kids? Can they go on trips?</button>
+    <div class="faq-panel">
+        <p>Our recommended minimum age for traveling with an adult on our expeditions is 16. You must be able to provide proof of age.</p>
+    </div>
+    <button class="faq-accordion">I have special dietary needs. Can you help?</button>
+    <div class="faq-panel">
+        <p>Yes! Just tell our reservations agent about your needs, and we’ll be happy to cater to them.</p>
+    </div>
+    <button class="faq-accordion">What happens if weather does not permit our travels?</button>
+    <div class="faq-panel">
+        <p>All trips leave as scheduled, the experience is extreme. In major circumstances, Breaking Waves may alter the scheduled trip.</p>
+    </div>
+    <button class="faq-accordion">What is your cancellation policy?</button>
+    <div class="faq-panel">
+        <p>As rafting trips require advanced preparation, no refunds will be given for cancellations made within 72 hours of a scheduled trip.</p>
+
+            <p>If a group cancels within 30 days of a trip, a 50% refund is given. Full payment for groups of 10 or more is due 2 weeks prior to the 
+            scheduled trip. There are no refunds for cancellations of groups of 10 or more within 2 weeks of a scheduled trip.</p>
+    </div>
+    <button class="faq-accordion">How experienced are the guides?</button>
+    <div class="faq-panel">
+        <p>Breaking Waves guides have a combined 75 years of experience guiding our guests down the most exclusive and exotic rivers around the entire world.
+            All of our guides have gone through an extensive training program required by the State of California.
+        </p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("faq-accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+    
+    <div id="faq-background"></div>
+    <section class="faq-msg">
+        <h2>Have more questions?</h2>
+        <p>Contact one of our expert team members for assistance with any questions or concerns you may have. 
+            You may also inquiry about and schedule a trip by phone or email. </p>
+        <a class='contact' href="#">Contact Us</a>
+    </section>
+        
+    </main>
+    <footer>
+        <p>Dry Oar &copy; 2023 - Ashur Ellsworth</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
