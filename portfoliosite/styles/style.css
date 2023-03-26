@@ -164,6 +164,85 @@ footer .social img {
 
 /* About me */ 
 
-#me-image {
-    width: 400px;
+.aboutme-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#hello {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+#aboutme-banner {
+    grid-column: 2/10;
+    grid-row: 2/6;
+    margin-bottom: 50px;
+}
+#aboutme-banner-img{
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: transform .5s;
+    box-shadow: 3px 3px 8px #6f7364;
+    width: 100%;
+}
+#aboutme-banner-img:hover {
+    transform: scale(1.02);
+}
+
+#aboutme-description {
+    grid-column: 2/10;
+    grid-row: 6/8;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+#aboutme-description p {
+    margin: 1em;
+}
+
+.hobbies {
+    grid-column: 1/-1;
+    grid-row: 9/12;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-bottom: 70px;
+}
+.hobbies img {
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: transform .5s;
+    box-shadow: 3px 3px 8px #6f7364;
+    margin: 0 2em;
+    width: 100%;
+
+}
+
+.hobbies img:hover {
+    transform: scale(1.02);
+}
+
+#freetime-header {
+    grid-column: 5/7;
+    text-align: center;
+
+}
+
+.games {
+    grid-column: 2/4;
+    text-align: center;
+}
+
+.reading {
+    grid-column: 5/7;
+    text-align: center;
+}
+
+.movies {
+    grid-column: 8/10;
+    text-align: center;
+}
+
+.hobbies p {
+    font-size: 1.1em;
 }
